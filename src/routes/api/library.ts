@@ -40,7 +40,7 @@ const API: IAPI = {
         author: joi.string().required(),
         imageUrl: joi.string().required()
       },
-      access: ApiAccess.DEV,
+      access: ApiAccess.GUEST,
       execute: async ({ label, description, imageUrl, author }) => {
         const book = await new Book({ label, description, imageUrl, author }).save();
         return book.toObject();
