@@ -22,7 +22,7 @@ class App extends React.Component<any> {
       <div className="app align-items-stretch d-flex flex-column" style={{ minHeight: "100vh" }}>
         <Switch>
           <Route path="/" component={Library} />
-          <Route path="*" component={InvalidPage} />
+          <Route path="*" component={InvalidPage} /> 
         </Switch>
       </div>
     );
